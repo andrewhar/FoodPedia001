@@ -3,4 +3,64 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+
+
+        <!-- Title-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary"
+            android:orientation="horizontal"
+            android:paddingLeft="20sp"
+            android:paddingTop="10sp">
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:src="@mipmap/about" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="有關資料"
+                android:textColor="@color/icons"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!--content-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:textSize="18dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:textSize="18dp"
+            android:text="此app之開發目的是作學習、交流用途。"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:textSize="18dp"
+            android:text="它了運用fragment adapter,nested fragment,intent to camera,refresh layout 等技術。"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:textSize="18dp"
+            android:text="而它的backend service主要運用algolia, firebase兩者,上載最新的餐廳資料,及以關鍵字搜索餐廳。"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="如有任何查詢或疑問,請聯絡本人。(email: lolalanhar@gmail.com)"/>
+
+
+    </LinearLayout>
 </LinearLayout>

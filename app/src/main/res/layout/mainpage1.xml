@@ -1,6 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- Title-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="@color/primary"
+                android:orientation="horizontal"
+                android:paddingLeft="20sp"
+                android:paddingTop="10sp">
+
+                <ImageView
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Foodpedia"
+                    android:textColor="@color/icons"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <!--Bigpic-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bigpasta" />
+                <!-- searchbar-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/primary" />
+
+                <EditText
+                    android:id="@+id/edittextsearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/icons"
+                    android:gravity="center_vertical"
+                    android:hint="搜尋美食"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/lightgray"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button"
+                    android:textColor="@color/primary"
+                    android:id="@+id/buttonsearch"
+                    android:textSize="18dp"
+                    android:text="確認"/>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_weight="0.1">
+
+                <!-- Forth  line: 8 choices -->
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/insideviewpager2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="50dp">
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tab_layout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp" />
+
+                </android.support.v4.view.ViewPager>
+                <!-- Big Ad.. -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/insideviewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"></android.support.v4.view.ViewPager>
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tab_layout"
+                        android:layout_width="30sp"
+                        android:layout_height="15sp"
+                        android:layout_gravity="center_horizontal"
+                        app:tabBackground="@drawable/tab_selector"
+                        app:tabIndicatorHeight="0sp" />
+                </FrameLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
 
 </LinearLayout>

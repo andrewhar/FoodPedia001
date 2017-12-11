@@ -38,32 +38,52 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
-            return new First();
+            return new MainPage1();
+        }else if(position ==1){
+            return new MainPage2();
+        }else if(position ==2){
+            return new MainPage3();
         }else{
-            return new Second();
+            return new MainPage4();
         }
     }
 
+
+
     @Override
     public int getCount() {
-        return 5;
+        return 4;
     }
 
     @Override
     public CharSequence getPageTitle(int position) {
         if (position == 0) {
-            Drawable image = mContext.getResources().getDrawable(R.drawable.ic_action_name);
+            Drawable image = mContext.getResources().getDrawable(R.drawable.mainpage1);
             image.setBounds(0,0, image.getIntrinsicWidth(), image.getIntrinsicHeight());
-            SpannableString sb = new SpannableString("0123    First");
+            SpannableString sb = new SpannableString("00主頁");
             ImageSpan imageSpan = new ImageSpan(image, ImageSpan.ALIGN_BOTTOM);
-            sb.setSpan(imageSpan, 0, 4, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+            sb.setSpan(imageSpan, 0, 2, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
             return sb;
-        }else{
-            Drawable image = mContext.getResources().getDrawable(R.drawable.ic_action_name);
+        }else if(position ==1){
+            Drawable image = mContext.getResources().getDrawable(R.drawable.mainpage2);
             image.setBounds(0,0, image.getIntrinsicWidth(), image.getIntrinsicHeight());
-            SpannableString sb = new SpannableString("01234567 First");
+            SpannableString sb = new SpannableString("00最新");
             ImageSpan imageSpan = new ImageSpan(image, ImageSpan.ALIGN_BOTTOM);
-            sb.setSpan(imageSpan, 0, 8, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+            sb.setSpan(imageSpan, 0, 2, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+            return sb;
+        }else if(position ==2){
+            Drawable image = mContext.getResources().getDrawable(R.drawable.mainpage3);
+            image.setBounds(0,0, image.getIntrinsicWidth(), image.getIntrinsicHeight());
+            SpannableString sb = new SpannableString("00上傳");
+            ImageSpan imageSpan = new ImageSpan(image, ImageSpan.ALIGN_BOTTOM);
+            sb.setSpan(imageSpan, 0, 2, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+            return sb;
+        }else {
+            Drawable image = mContext.getResources().getDrawable(R.drawable.about_tab);
+            image.setBounds(0,0, image.getIntrinsicWidth(), image.getIntrinsicHeight());
+            SpannableString sb = new SpannableString("00關於");
+            ImageSpan imageSpan = new ImageSpan(image, ImageSpan.ALIGN_BOTTOM);
+            sb.setSpan(imageSpan, 0, 2, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
             return sb;
         }
     }

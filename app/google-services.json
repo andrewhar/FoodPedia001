@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "309236493895",
+    "firebase_url": "https://foodpedia-d83e4.firebaseio.com",
+    "project_id": "foodpedia-d83e4",
+    "storage_bucket": "foodpedia-d83e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309236493895:android:0e027e1557276113",
+        "android_client_info": {
+          "package_name": "com.example.summer.foodpedia4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309236493895-uc39qv7rkkvi5b0v7s81r4htqet6smn2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.summer.foodpedia4",
+            "certificate_hash": "d447fb16dcc78290d3356044bc4e23f63d12a04b"
+          }
+        },
+        {
+          "client_id": "309236493895-4hg3bpvis0e76428i02c4jjn37onvpdn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrI7mped4YRYj7jk7fgSi0uoyGtMVty1M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309236493895-4hg3bpvis0e76428i02c4jjn37onvpdn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
